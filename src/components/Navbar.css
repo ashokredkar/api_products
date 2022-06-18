@@ -1,0 +1,33 @@
+.navbar{
+    display: flex;
+    height: max-content;
+    background-color: var(--color-primary);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .sort{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navbar .sort p{
+    margin-right: 0.5rem;
+}
+.navbar .sort select{
+    padding: 0.5rem 1rem;
+}
+.navbar .search input{
+    padding: 0.6rem 1rem;
+    width: 250px;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .sort{
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,89 @@
+*{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-width: 0;
+}
+
+.btn1{
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  background-color: white;
+}
+.btn1:hover{
+  background: var(--color-primary);
+  color: white;
+}
+
+.section-padding{
+  padding: 3rem 6rem;
+}
+.productItems{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pItem{
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 2rem;
+  height: 400px;
+  width: 350px;
+}
+.pItem img{
+  width: 150px;
+  height: 180px;
+  margin-bottom: 2rem;
+}
+.pItem h3{
+  margin-bottom: 1rem;
+  font-weight: 500;
+  height: 5rem;
+}
+.pItem .itemInfo{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.pItem .itemInfo p{
+  font-size: 24px;
+  font-weight: 300;
+}
+
+@media screen and (max-width:350px) {
+  .pItem .itemInfo{
+      flex-direction: column;
+  }
+  .pItem .itemInfo p{
+      margin-bottom: 0.5rem;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .section-padding{
+    padding: 2rem 4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section-padding{
+    padding: 1rem;
+  }
+  h3{
+    font-size: 15px;
+  }
+}
